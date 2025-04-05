@@ -24,6 +24,11 @@ public class Movie  implements java.io.Serializable {
        this.movieType = movieType;
        this.mainActor = mainActor;
     }
+
+    public Movie(String title, int copies) {
+        this.title = title;
+        this.copies = copies;
+     }
    
     public Integer getId() {
         return this.id;
