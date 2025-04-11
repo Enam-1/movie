@@ -6,7 +6,7 @@
   <class name="fr.utbm.entity.Movie" optimistic-lock="version" table="MOVIE">
     <id name="id" type="int">
       <column name="ID_MOVIE"/>
-      <generator class="assigned"/>
+      <generator class="identity"/>
     </id>
     <property name="title" type="string">
       <column length="50" name="TITLE" not-null="true"/>

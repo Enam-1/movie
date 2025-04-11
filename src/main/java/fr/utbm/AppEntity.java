@@ -2,6 +2,7 @@ package fr.utbm;
 
 import fr.utbm.controller.DefaultMovieController;
 import fr.utbm.repository.FileMovieDao;
+import fr.utbm.repository.HibernateMovieDao;
 
 import java.util.Calendar;
 
@@ -26,10 +27,12 @@ public class AppEntity {
         entityManager.getTransaction().commit();
         */
 
-        DefaultMovieController regMovie = new DefaultMovieController();
+//        DefaultMovieController regMovie = new DefaultMovieController();
         Movie film =  regMovie.registerMovieFromConsoleInput();
 
-        FileMovieDao fileMovie = new FileMovieDao();
-        fileMovie.save(film.getTitle(), film.getCopies());
+//        FileMovieDao fileMovie = new FileMovieDao();
+//        fileMovie.save(film.getTitle(), film.getCopies());
+
+        DefaultMovieController
     }
 }
